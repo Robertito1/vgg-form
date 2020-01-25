@@ -13,28 +13,83 @@ form {
     margin: auto;
     text-align: center;
     border-radius:10px ;
+    animation-name: brighter ;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: 3 ;
+}
+@keyframes brighter {
+    0% {background-color: blue;}
+    50% {background-color: rgb(3, 3, 7);}
+    100% {background-color: blue;}
 }
 h1 {
-    color: rgb(160, 110, 141);
+    color: rgb(231, 235, 11);
 }
 input[type=text]{
-    width: 60%;
+    height: 7%; 
+    width: 70%;
     border-radius: 4px;
+    -webkit-transition: width height 1s; 
+    transition: width  1s;
+}
+input[type=text]:focus {
+    width: 77%;
+    height: 9%;
 }
 input[type=date]{
-    width: 60%;
+    height: 7%;
+    width: 70%;
     border-radius: 4px;
 }
 input[type=email]{
-    width: 60%;
+    height: 7%;
+    width: 70%;
     border-radius: 4px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-transition: width height 1s;
+    transition: width 1s;
 }    
+input[type=email]:focus{
+    width: 77%;
+    height: 9%;
+
+}
 input[type=password]{
-    width: 60%;
+    height: 7%;
+    width: 70%;
     border-radius: 5px;
+    -webkit-transition: width height 1s;
+    transition: width 1s;
+}
+input[type=password]:focus{
+    width: 77%;
+    height: 9%;
+
 }
 select{
-    width: 60%;
+    height: 7%; 
+    width: 70%;
     border-radius: 20px;
 }
-
+input[type=submit]{
+    font-style: oblique;
+    margin-top: 5%;
+    margin-left: 55%;
+    height: 6%;
+    width: 30%;
+    border-radius: 5px;
+    background-color: chartreuse;
+    -webkit-transition: background-color 2s, width 1s, height 1s ;
+    transition: width 1s;
+}
+input[type=submit]:hover{
+    width: 33%;
+    height: 7%;
+    background-color: rgb(116, 109, 98);
+}
+h3 {
+    font-weight: 200;
+    font:   sans-serif;
+    color: rgb(255, 255, 255);
+}

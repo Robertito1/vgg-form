@@ -1,0 +1,50 @@
+$upline: 7%;
+$sideline: 70%;
+$curve: 4px;
+ form{
+    background-color: blue;
+    color: yellow;
+    height: 500px;
+    width: 320px;
+    padding: 5px;
+    border: 5px solid gray;
+    margin: auto;
+    text-align: center;
+    border-radius:10px ;
+    h3 {
+        font-weight: 200;
+        font:   sans-serif;
+        color: #ffffff;
+    }
+    input {
+        height: $upline;
+        width: $sideline;
+        border-radius: $curve;
+        
+    }
+    select{
+        height: $upline; 
+        width: $sideline;
+        border-radius: $curve + 16;
+    }
+ }
+ input[type=submit]{
+    font-style: oblique;
+    margin-top: 2%;
+    margin-left: 55%;
+    height: 6%;
+    width: 30%;
+    border-radius: 5px;
+    background-color: chartreuse;
+    -webkit-transition: background-color 2s, width 1s, height 1s ;
+    transition: width 1s;
+ }
+ input[type=submit]:hover{
+    width: 33%;
+    height: 7%;
+    background-color: rgb(116, 109, 98);
+ }
+ input[type=radio]{
+     height: 2%;
+     width: 4%;
+ }
