@@ -6,24 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SASS PROTOTYPE</title>
     <link rel="stylesheet" type="text/css" href="design.css">
+    <script src=" design.js"></script>
 </head>
-<body>
+<body> 
     <h1 align="center">VGG INTERNSHIP FORM</h1>
-    <form>
+    <form id="form" name="form" onsubmit="return formQualities()">
          <h3>BECOME AN INTERN</h3>
          Firstname <br>
         <input type="text" name ="Firstname" id="Firstname" placeholder ="given name..."><br>
         Surname <br>
-        <input type="text" name ="Surname" placeholder="family name..."><br>
+        <input type="text" name ="Surname" id="Surname" placeholder="family name..."><br>
         Email <br>
-        <input type="email" name="email" placeholder="somebody@mail.com"><br>
+        <input type="email" name="email" id="email" placeholder="somebody@mail.com"><br>
         Date of birth: <br>
-        <input type="date" name ="Date of birth"><br>
-        <i>Gender:</i> <br>
-        <input type="radio" id="gender" name="gender"
-             value="male"/>Male<br> 
-        <input type="radio" id="gender" name="gender"
-            value="female"/>Female <br>
+        <input type="date" name ="Date_of_birth" id="Date_of_birth"><br>
            <b>VGG internship track</b>: <br>
              <select id ="tracks" name="tracks">
                   <option value="front-end development">Front-end Development
@@ -38,7 +34,9 @@
                   </option>
              </select><br>
              Password <br>
-           <input type="password" name="password" placeholder="choose a secure password"><br>
+           <input type="password" name="password" id ="password" placeholder="choose a secure password"><br>
+           Confirm password
+         <br>  <input type="password" name="password2" id ="password2" placeholder="Confirm your password"><br>
            <input type="submit" value="SUBMIT"/>     
     </form>
     

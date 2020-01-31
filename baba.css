@@ -7,3 +7,26 @@ p {
 script {
     color: rgb(253, 5, 5);
 }
+}
+var surnamen= document.forms["form"]
+["Surname"].value;
+if (surnamen==""){
+    alert("name must be filled");
+    return false;
+ 
+}
+var mail=   document.forms["form"]
+ ["email"].value;
+ if (mail==""){
+     alert(" surnname must be filled");
+     return false
+ }
+ var dOb=   document.forms["form"]
+ ["Date_of_birth"].value;
+ if (dOb==""){
+     alert("date of birth must be filled");
+     return false
+ }
+ 
+ 
+}
