@@ -5,40 +5,37 @@ form {
   width: 320px;
   padding: 5px;
   border: 5px solid gray;
-  margin-left : 35%;
-  float: left;
-  align-items: center;
-  align-content: center;
-  box-sizing: content-box;
+  margin: auto;
+  border-radius: 10px;
 }
 
 form h3 {
   font-weight: 200;
   font: sans-serif;
-  color: #ffffff;
-  margin-left: 20%;
+  color: #d6b9b9;
+  text-align: center;
 }
 
 form input {
-  height: 7%;
+  height: 6%;
   width: 80%;
   border-radius: 4px;
-  margin-left: 20px ;
+  margin-left: 10%;
 }
 
 form select {
-  height: 7%;
-  width: 83%;
+  height: 6%;
+  width: 80%;
   border-radius: 20px;
-  margin-left: 20px;
+  margin-left: 11%;
 }
 
 input[type=submit] {
   font-style: oblique;
-  margin-top: 2%;
-  margin-left: 55%;
-  height: 5%;
-  width: 25%;
+  margin-top: 8%;
+  margin-left: 60%;
+  height: 6%;
+  width: 30%;
   border-radius: 5px;
   background-color: chartreuse;
   -webkit-transition: background-color 2s, width 1s, height 1s;
@@ -47,8 +44,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  width: 30%;
-  height: 6%;
+  width: 33%;
+  height: 7%;
   background-color: #746d62;
 }
 /*# sourceMappingURL=design.css.map */

@@ -1,5 +1,5 @@
-$upline: 7%;
-$sideline: 70%;
+$upline: 6%;
+$sideline: 80%;
 $curve: 4px;
  form{
     background-color: blue;
@@ -9,29 +9,31 @@ $curve: 4px;
     padding: 5px;
     border: 5px solid gray;
     margin: auto;
-    text-align: center;
     border-radius:10px ;
     h3 {
         font-weight: 200;
         font:   sans-serif;
-        color: #ffffff;
+        color: #d6b9b9;
+        text-align: center;
     }
     input {
         height: $upline;
         width: $sideline;
         border-radius: $curve;
+        margin-left: 10%;
         
     }
     select{
         height: $upline; 
         width: $sideline;
         border-radius: $curve + 16;
+        margin-left: 11%;
     }
  }
  input[type=submit]{
     font-style: oblique;
-    margin-top: 2%;
-    margin-left: 55%;
+    margin-top: 8%;
+    margin-left: 60%;
     height: 6%;
     width: 30%;
     border-radius: 5px;
@@ -43,8 +45,4 @@ $curve: 4px;
     width: 33%;
     height: 7%;
     background-color: rgb(116, 109, 98);
- }
- input[type=radio]{
-     height: 2%;
-     width: 4%;
  }

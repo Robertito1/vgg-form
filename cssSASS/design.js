@@ -1,10 +1,11 @@
 function formQualities(){
+   event.preventDefault()
  var namen=   document.forms["form"]["Firstname"].value;
  var familliennamen=   document.forms["form"]["Surname"].value;
  var mail=   document.forms["form"]["email"].value;
  var datum=   document.forms["form"]["Date_of_birth"].value;
  var sesame=   document.forms["form"]["password"].value;
- var pWordlenght = sesame.lenght;
+ var pWordlength= sesame.length;
  var sesame2=   document.forms["form"]["password2"].value;
  if (namen==""){
     window.alert("name must be filled");
@@ -26,11 +27,11 @@ function formQualities(){
     window.alert("please input a safe password");
     return false;
   }
- if (pWordlenght < 8 ) {
+ if (pWordlength < 8 ) {
     window.alert ("Almost there! just make your password stronger") ;
     return false;
 }     
- if (pWordlenght > 16 ) {
+ if (pWordlength > 16 ) {
     window.alert ("Almost there! password too long");  
     return false;        
         }
@@ -38,10 +39,10 @@ function formQualities(){
     window.alert("passwords dont match");
     return false;
   }   
-}
 console.log(namen);
 console.log(familliennamen)
 console.log(mail)
 console.log(datum)
 console.log(sesame)
 console.log(sesame2)
+}
