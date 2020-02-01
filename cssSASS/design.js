@@ -4,6 +4,7 @@ function formQualities(){
  var familliennamen=   document.forms["form"]["Surname"].value;
  var mail=   document.forms["form"]["email"].value;
  var datum=   document.forms["form"]["Date_of_birth"].value;
+ var course= document.forms["form"]["tracks"].value
  var sesame=   document.forms["form"]["password"].value;
  var pWordlength= sesame.length;
  var sesame2=   document.forms["form"]["password2"].value;
@@ -22,7 +23,11 @@ function formQualities(){
  if (datum==""){
     window.alert("Dont be shy, when were you born");
     return false ;
-  }  
+  } 
+ if (course=="") {
+    window.alert("what are interested in?");
+    return false;
+ }
  if (sesame==""){
     window.alert("please input a safe password");
     return false;
@@ -43,6 +48,7 @@ console.log(namen);
 console.log(familliennamen)
 console.log(mail)
 console.log(datum)
+console.log(course)
 console.log(sesame)
 console.log(sesame2)
 }
