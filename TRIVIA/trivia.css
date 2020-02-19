@@ -1,0 +1,10 @@
+.quiz {
+    display: none;
+    text-align: center;
+}
+.prev, .next {
+    user-select: none;
+}
+.container {
+overflow: hidden;
+}
