@@ -2,9 +2,23 @@
     display: none;
     text-align: center;
 }
-.prev, .next {
+.prev {
     user-select: none;
+    margin-top: 200px;
+    position: fixed;
+    margin-left: 50px;   
 }
 .container {
 overflow: hidden;
 }
+.next{
+    margin-top: 200px;
+    position: fixed;
+    margin-left: 500px;
+}
+ button {
+    margin-top: 250px;
+    position: fixed;
+    margin-left: 250px;
+    
+ }

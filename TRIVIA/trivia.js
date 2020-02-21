@@ -6,20 +6,32 @@ localStorage.setItem("what year did Nigeria gain independence ?", "1960")
 localStorage.setItem("what is a five sided shape called ?", "pentagon")
 localStorage.setItem("what tag is used for a thematic break in HTML", "hr")
 localStorage.setItem("what does vgg stand for ?", "venture garden group")
-let count = 1;
+let count = 0;
 function nextQuestion() {
-   var current = document.getElementById(`ques${count}`);
-   current.style.display = "inline" ;
-   count++;
-   if (count >= questions.length ) {
-      count = 1;
+  
+   if (count <= 9 ) {
+      count++;
+      if(count > 1){
+         let lastCount = count -1 ;
+         var current = document.getElementById(`ques${lastCount}`);
+         current.style.display = "none" ;
+      }
+      var newCurrent = document.getElementById(`ques${count}`);
+      newCurrent.style.display = "block" ;
    }
 }
 function prevQuestion() {
-    var current = document.getElementById(`ques${count}`);
-    current.style.display = "inline" ;
-    count--;
     if (count >= 9 ) {
-       count = 1
+       count--
+       if(count <= 9){
+         let lastCount = count +1 ;
+         var current = document.getElementById(`ques${lastCount}`);
+         current.style.display = "none" ;
+      }
+      var newCurrent = document.getElementById(`ques${count}`);
+      newCurrent.style.display = "block" ;
     }
  }
+function displayResult() {
+   localStorage.getItem
+}
