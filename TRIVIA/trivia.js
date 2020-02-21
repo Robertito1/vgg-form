@@ -1,11 +1,13 @@
 localStorage.setItem("what is the name of the CEO at venture garden group ?" , "Bunmi Akinyemiju");
 localStorage.setItem("who is the man to walk on the moon ?", "Neil Armstrong");
 localStorage.setItem("When was venture garden group established", "2011");
-localStorage.setItem("what is a female eagle called ?" ,"Falcon")
-localStorage.setItem("what year did Nigeria gain independence ?", "1960")
-localStorage.setItem("what is a five sided shape called ?", "pentagon")
-localStorage.setItem("what tag is used for a thematic break in HTML", "hr")
-localStorage.setItem("what does vgg stand for ?", "venture garden group")
+localStorage.setItem("what is a female eagle called ?" ,"Falcon");
+localStorage.setItem("what year did Nigeria gain independence ?", "1960");
+localStorage.setItem("what is a five sided shape called ?", "pentagon");
+localStorage.setItem("what tag is used for a thematic break in HTML", "hr");
+localStorage.setItem("what does vgg stand for ?", "venture garden group");
+ var tho = localStorage.getItem("what does vgg stand for ?");
+ document.write(tho);
 let count = 0;
 function nextQuestion() {
   
