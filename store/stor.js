@@ -17,8 +17,14 @@
         const value = localStorage.getItem(key)
 
         
-      list.innerHTML +=  `${key} at ${value} <button type="button" id="clear">delete</button><br />` ;
+      list.innerHTML +=  `<p><span>${key}</span> at <span>${value}</span> <button type="button" onclick="deleteTask()" id="clear">delete</button></p>` ;
       
+ }
+ function deleteTask() {
+    const parentElement = event.target.parentElement;
+    const key = parentElement.querySelector("span").textContent;
+    parentElement.remove();
+    localStorage.removeItem(key);
  }
  
 
