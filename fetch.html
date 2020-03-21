@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH THINGS</title>
+</head>
+<body>
+    <button id="get">get info</button>
+    <div id="output"></div>
+    <button id="retrieve"></button>
+    <script>
+        document.getElementById("get").addEventListener("click" , getInfo)
+        document.getElementById("retrieve").addEventListener("click" , fetchApi)
+
+        function getInfo(){
+            // fetch("fetch.txt")
+            // .then(function(res){
+            //     return res.text();
+            // })
+            // .then(function(writeup){
+            //     console.log(writeup);
+            // })
+            fetch("fetch.txt")
+            .then((res) => res.text())
+            .then((data) => document.getElementById("output").innerHTML = data)
+
+        function getInfo(){
+            // fetch("fetch.txt")
+            // .then(function(res){
+            //     return res.text();
+            // })
+            // .then(function(writeup){
+            //     console.log(writeup);
+            // })
+            fetch("https://api.github.com/users/")
+            .then((res) => res.text())
+            .then((data) => document.getElementById("output").innerHTML = data)
+        }
+    </script>
+</body>
+</html>
