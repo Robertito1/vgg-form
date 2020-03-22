@@ -7,8 +7,8 @@ p {
 script {
     color: rgb(253, 5, 5);
 }
-}
-var surnamen= document.forms["form"]
+
+/* var surnamen= document.forms["form"]
 ["Surname"].value;
 if (surnamen==""){
     alert("name must be filled");
@@ -29,4 +29,4 @@ var mail=   document.forms["form"]
  }
  
  
-}
+} */
