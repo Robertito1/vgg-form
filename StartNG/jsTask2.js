@@ -5,21 +5,33 @@ let data = [
   { principal: 2000, time: 3 }
 ];
 
-let interestData = data.map(run => {
+let interestData = data.map(interestCalculator => {
   let newData = {};
 
-  newData.principal = run.principal;
-  newData.time = run.time;
+  newData.principal = interestCalculator.principal;
+  newData.time = interestCalculator.time;
 
-  if (run.principal >= 2500 && run.time > 1 && run.time < 3) {
+  if (
+    interestCalculator.principal >= 2500 &&
+    interestCalculator.time > 1 &&
+    interestCalculator.time < 3
+  ) {
     newData.rate = 3;
-  } else if (run.principal >= 2500 && run.time >= 3) {
+  } else if (
+    interestCalculator.principal >= 2500 &&
+    interestCalculator.time >= 3
+  ) {
     newData.rate = 4;
-  } else if (run.principal < 2500 || run.time <= 1) {
+  } else if (
+    interestCalculator.principal < 2500 ||
+    interestCalculator.time <= 1
+  ) {
     newData.rate = 1;
   }
 
-  newData.interest = (run.principal * run.time * newData.rate) / 100;
+  newData.interest =
+    (interestCalculator.principal * interestCalculator.time * newData.rate) /
+    100;
   return newData;
 });
 
