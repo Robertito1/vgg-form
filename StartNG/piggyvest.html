@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="piggyvest.css">
-</head>
-<body>
- <div>
-    <h3>Create a Secure Account</h3>
-    <h5>Welcome to the future of Savings & Investments</h5>
-    Firstname <br>
-   <input type="text" id="name" ><br>
-   Email <br>
-   <input type="email" id="email" ><br>
-   Phone Number <br>
-   <input type="number" id="number" ><br>
-   password  <br>
-   <input type="password" id="password"> <br>
-   reffer phone or promo code  <br>
-    <input type="text">  <br>
-        Password <br>
-      <input type="password" name="password" placeholder="choose a secure password"><br>
-      <input type="submit" value="SUBMIT"/>     
-</form>
- </div>
-</body>
+    <link rel="stylesheet" type="text/css" href="piggyvest.css" />
+  </head>
+  <body>
+    <div>
+      <div class="first">
+        <a href="www.piggyvest.com"><img src="top.jpg" alt=""/></a>
+      </div>
+      <div class="second">
+        <form>
+          <h3>Create a Secure Account</h3>
+          <h5>Welcome to the future of Savings & Investments</h5>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Full Name" />
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail" placeholder="Email Address" />
+          <label for="number">Phone Number</label>
+          <input type="number" id="number" placeholder="Phone Number" />
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" />
+          <label for="refCode">Referrer Phone or Promo Code(optional)</label>
+          <input
+            type="text"
+            id="refCode"
+            placeholder="Referrer Phone or Promo Code"
+          />
+          <label for="tracks">How Did You Hear About Us? (optional) </label>
+          <select id="tracks" name="tracks">
+            <option value="empty">Click To Select</option>
+            <option value="facebook">Facebook </option>
+            <option value="twitter">Twitter </option>
+            <option value="Instagram">Instagram </option>
+            <option value="friend/family/coworker referral"
+              >Friend/Family/Coworker Referral
+            </option>
+            <option value="google search">Google search </option>
+            <option value="google playstore">Google playstore</option>
+            <option value="online blog">Online Blog</option>
+            <option value="local newspaper">Local Newspaper</option>
+            <option value="at an event">At an event</option>
+            <option value="other">Other</option> </select
+          ><br />
+          <button type="submit" value="SUBMIT">CREATE ACCOUNT</button>
+        </form>
+      </div>
+      <div id="alt">
+        <a
+          href="www.piggyvest.com/404"
+          style="text-decoration: none; color: rgb(255, 255, 255);"
+          >Already have an account? Log in</a
+        >
+      </div>
+    </div>
+  </body>
 </html>

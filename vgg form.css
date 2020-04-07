@@ -1,95 +1,99 @@
 body {
-    background-image: url("background.png");
-    background-repeat: no-repeat; 
-    background-size: cover;
-     }
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 form {
-    background-color: blue;
-    color: yellow;
-    height: 500px;
-    width: 320px;
-    padding: 5px;
-    border: 5px solid gray;
-    margin: auto;
-    text-align: center;
-    border-radius:10px ;
-    animation-name: brighter ;
-    animation-duration: 4s;
-    animation-delay: 3s;
-    animation-iteration-count: 3 ;
+  background-color: blue;
+  color: yellow;
+  height: 500px;
+  width: 320px;
+  padding: 5px;
+  border: 5px solid gray;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  animation-name: brighter;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: 3;
 }
 @keyframes brighter {
-    0% {background-color: blue;}
-    50% {background-color: rgb(3, 3, 7);}
-    100% {background-color: blue;}
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: rgb(3, 3, 7);
+  }
+  100% {
+    background-color: blue;
+  }
 }
 h1 {
-    color: rgb(231, 235, 11);
+  color: rgb(231, 235, 11);
 }
-input[type=text]{
-    height: 7%; 
-    width: 70%;
-    border-radius: 4px;
-    -webkit-transition: width height 1s; 
-    transition: width  1s;
+input[type="text"] {
+  height: 7%;
+  width: 70%;
+  border-radius: 4px;
+  -webkit-transition: width height 1s;
+  transition: width 1s;
 }
-input[type=text]:focus {
-    width: 77%;
-    height: 9%;
+input[type="text"]:focus {
+  width: 77%;
+  height: 9%;
 }
-input[type=date]{
-    height: 7%;
-    width: 70%;
-    border-radius: 4px;
+input[type="date"] {
+  height: 7%;
+  width: 70%;
+  border-radius: 4px;
 }
-input[type=email]{
-    height: 7%;
-    width: 70%;
-    border-radius: 4px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-transition: width height 1s;
-    transition: width 1s;
-}    
-input[type=email]:focus{
-    width: 77%;
-    height: 9%;
-
+input[type="email"] {
+  height: 7%;
+  width: 70%;
+  border-radius: 4px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-transition: width height 1s;
+  transition: width 1s;
 }
-input[type=password]{
-    height: 7%;
-    width: 70%;
-    border-radius: 5px;
-    -webkit-transition: width height 1s;
-    transition: width 1s;
+input[type="email"]:focus {
+  width: 77%;
+  height: 9%;
 }
-input[type=password]:focus{
-    width: 77%;
-    height: 9%;
-
+input[type="password"] {
+  height: 7%;
+  width: 70%;
+  border-radius: 5px;
+  -webkit-transition: width height 1s;
+  transition: width 1s;
 }
-select{
-    height: 7%; 
-    width: 70%;
-    border-radius: 20px;
+input[type="password"]:focus {
+  width: 77%;
+  height: 9%;
 }
-input[type=submit]{
-    font-style: oblique;
-    margin-top: 5%;
-    margin-left: 55%;
-    height: 6%;
-    width: 30%;
-    border-radius: 5px;
-    background-color: chartreuse;
-    -webkit-transition: background-color 2s, width 1s, height 1s ;
-    transition: width 1s;
+select {
+  height: 7%;
+  width: 70%;
+  border-radius: 20px;
 }
-input[type=submit]:hover{
-    width: 33%;
-    height: 7%;
-    background-color: rgb(116, 109, 98);
+input[type="submit"] {
+  font-style: oblique;
+  margin-top: 5%;
+  margin-left: 55%;
+  height: 6%;
+  width: 30%;
+  border-radius: 5px;
+  background-color: chartreuse;
+  -webkit-transition: background-color 2s, width 1s, height 1s;
+  transition: width 1s;
+}
+input[type="submit"]:hover {
+  width: 33%;
+  height: 7%;
+  background-color: rgb(116, 109, 98);
 }
 h3 {
-    font-weight: 200;
-    font:   sans-serif;
-    color: rgb(255, 255, 255);
+  font-weight: 200;
+  font: sans-serif;
+  color: rgb(255, 255, 255);
 }

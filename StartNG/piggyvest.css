@@ -1,0 +1,103 @@
+body {
+  background-color: #add8e6;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+div {
+  display: flex;
+  flex-direction: column;
+}
+#icon {
+  background-image: url("top.jpg");
+  background-size: 500%;
+  background-repeat: no-repeat;
+  height: 2000%;
+}
+form {
+  height: 800px;
+  width: 380px;
+  padding: 5px;
+  border: 0px solid gray;
+  background-color: rgb(246, 251, 252);
+  margin-left: 38%;
+  border-radius: 15px;
+  border-bottom-left-radius: 0cm;
+}
+input {
+  margin-left: 10%;
+  border: none;
+  display: block;
+  margin-top: 0ex;
+  height: 3%;
+  width: 74%;
+  border-radius: 4px;
+  background-color: rgb(219, 236, 236);
+  padding: 3%;
+}
+label {
+  display: block;
+  margin-left: 10%;
+  margin-top: 7%;
+  margin-bottom: 2%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+select {
+  display: block;
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 4px;
+  padding: 3%;
+  height: 6%;
+  background-color: rgb(219, 236, 236);
+  border: none;
+}
+h5 {
+  text-align: center;
+  color: #000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin: 0 none;
+  text-decoration: none;
+}
+h3 {
+  font-family: sans-serif;
+  font-style: normal;
+  text-align: center;
+  color: #270663;
+  padding: none;
+}
+img {
+  height: 50px;
+  border: none;
+  width: 13%;
+  margin: 0;
+  margin-left: 45%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+button {
+  background-color: #062a63;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  height: 7%;
+  width: 80%;
+  border-bottom-left-radius: 0cm;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  margin-top: 7%;
+}
+#alt {
+  margin-top: 40px;
+  margin-left: 44%;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
