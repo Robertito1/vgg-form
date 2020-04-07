@@ -10,10 +10,9 @@ div {
   flex-direction: column;
 }
 #icon {
+  display: block;
   background-image: url("top.jpg");
-  background-size: 500%;
-  background-repeat: no-repeat;
-  height: 2000%;
+  margin: 0 auto;
 }
 form {
   height: 800px;
@@ -21,7 +20,8 @@ form {
   padding: 5px;
   border: 0px solid gray;
   background-color: rgb(246, 251, 252);
-  margin-left: 38%;
+  display: block;
+  margin: 0 auto;
   border-radius: 15px;
   border-bottom-left-radius: 0cm;
 }
@@ -69,20 +69,19 @@ h3 {
   font-family: sans-serif;
   font-style: normal;
   text-align: center;
-  color: #270663;
+  color: #add8e6;
   padding: none;
 }
 img {
   height: 50px;
   border: none;
-  width: 13%;
-  margin: 0;
-  margin-left: 45%;
+  display: block;
+  margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 2%;
 }
 button {
-  background-color: #062a63;
+  background-color: #add8e6;
   border-radius: 10px;
   border: none;
   display: block;
@@ -95,8 +94,9 @@ button {
   margin-top: 7%;
 }
 #alt {
+  display: block;
+  margin: 0 auto;
   margin-top: 40px;
-  margin-left: 44%;
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
