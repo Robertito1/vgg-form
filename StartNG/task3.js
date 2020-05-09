@@ -1,5 +1,5 @@
-let array = [];
 compile = (num) => {
+  let array = [];
   for (let i = 1; i <= num; i++) {
     if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
       array.push("yu-gi-oh");
@@ -23,6 +23,6 @@ compile(100);
 console.log(array);
 
 // need to empty arrays in order to call second parameter
-array = [];
+// array = [];
 compile(40);
 console.log(array);
