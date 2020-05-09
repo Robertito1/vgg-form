@@ -6,6 +6,7 @@ const answerButtonElement = document.getElementById("answer-buttons");
 let showScore = document.getElementById("show-score");
 let currentQuestion = document.getElementById("current-question");
 let off = document.getElementById("of");
+let finalScore = document.getElementById("final-score");
 let shuffledQuestion, currentQuestionIndex;
 
 startButton.addEventListener("click", startGame);
@@ -16,17 +17,19 @@ nextButton.addEventListener("click", () => {
 nextButton.addEventListener("click", () => {
   currentQuestion.innerText++;
 });
-// answerButtonElement.addEventListener("click", displayScore);
+answerButtonElement.addEventListener("click", displayScore);
 
 function startGame() {
   console.log("game started");
   startButton.classList.add("hide");
   currentQuestion.classList.remove("hide");
+  showScore.classList.remove("hide");
   off.classList.remove("hide");
   shuffledQuestion = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
   showScore.innerText = 0;
   currentQuestion.innerText = 1;
+  finalScore.classList.add("hide");
   questionContainer.classList.remove("hide");
   setNextQuestion();
 }
@@ -68,6 +71,7 @@ function selectAnswer(e) {
   } else {
     startButton.innerText = "RESTART";
     startButton.classList.remove("hide");
+    finalScore.classList.remove("hide");
   }
 }
 
@@ -83,11 +87,14 @@ function clearStatusclass(element) {
   element.classList.remove("correct");
   element.classList.remove("wrong");
 }
-// function displayScore(question) {
-//   if (question.answers.correct === true) {
-//     console.log("right answer");
-//   }
-// }
+function displayScore(e) {
+  selectedButton = e.target;
+  const correct = selectedButton.dataset.correct;
+  if (correct) {
+    console.log("right answer");
+    showScore.innerText++;
+  }
+}
 const questions = [
   {
     question: "WHO IS AN ADJUDICATOR",

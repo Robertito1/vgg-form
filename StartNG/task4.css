@@ -19,7 +19,7 @@ body {
   width: 100vw;
   height: 100vh;
   align-items: center;
-  background-color: hsl(var(--hue), 100%, 20%);
+  background-color: hsl(var(--hue), 100%, 10%);
 }
 body.correct {
   --hue: var(--hue-correct);
@@ -39,7 +39,6 @@ body.wrong {
 
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin: 20px 0;
 }
@@ -50,7 +49,7 @@ body.wrong {
   background-color: hsl(var(--hue), 100%, 50%);
   border-radius: 5px;
   padding: 5px 10px;
-  color: aliceblue;
+  color: rgb(34, 36, 39);
   outline: none;
 }
 .btn:hover {
@@ -82,11 +81,15 @@ body.wrong {
   font-size: 2rem;
   font-weight: bold;
   font-style: italic;
-  color: rgb(218, 91, 133);
+  color: rgb(147, 192, 22);
 }
 .show-score {
   font-size: 2rem;
   font-weight: bold;
+}
+.final-score {
+  font-weight: bold;
+  font-style: italic;
 }
 .hide {
   display: none;
